@@ -36,6 +36,14 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/destinations/Northwind",
+      "target": {
+        "type": "destination",
+        "name": "Northwind"
+      },
+      "description": "SAPUI5 Resources"
     }
   ],
   "sendWelcomeFileRedirect": true

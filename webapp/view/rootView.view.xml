@@ -1,9 +1,54 @@
-<mvc:View controllerName="IntQ.IQuestion.controller.rootView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="IntQ.IQuestion.controller.rootView" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+					    <ObjectHeader xmlns="sap.m"  title="{CompanyName}" number="100.00" numberUnit="$" id="header0" binding="{JSONMODEL>/results}">
+					        <statuses>
+					            <ObjectStatus text="Success" state="Success" id="status0"/>
+					            
+					        </statuses>
+					        <attributes>
+					            <ObjectAttribute text="10 units" id="attribute0"/>
+					            
+					        </attributes>
+					        </ObjectHeader>
+					    <GroupHeaderListItem id="item0_1621865945228"/>
+					    <!--<List noDataText="Drop list items here" id="list0" items="{JSONMODEL>/results}"> -->
+					    <!--    <items>-->
+					    <!--        <StandardListItem type="Navigation" title="{JSONMODEL>City}" description="{JSONMODEL>Country}" id="item0"/>-->
+					    <!--    </items>-->
+					    <!--</List>-->
+					    <Table id="table1" width="100%" items="{JSONMODEL>/results}">
+								<items>
+									<ColumnListItem type="Active" id="item1">
+										<cells>
+											<Text text="{JSONMODEL>CompanyName}" id="text21"/>
+											<Text text="{JSONMODEL>Country}" id="text13"/>
+											<Text text="{JSONMODEL>City}" id="text41"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+								<columns>
+									<Column id="column11">
+										<header>
+											<Label text="Header 1" id="label01"/>
+										</header>
+									</Column>
+									<Column id="column111">
+										<header>
+											<Label text="Header 2" id="label11"/>
+										</header>
+									</Column>
+									<Column id="column21">
+										<header>
+											<Label text="Header 3" id="label21"/>
+										</header>
+									</Column>
+								</columns>
+							</Table>
+					</content>
 				</Page>
 			</pages>
 		</App>

@@ -12,6 +12,15 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"dataSources": {
+			"northwind": {
+				"uri": "/destinations/Northwind/V3/northwind/northwind.svc",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
 		}
 	},
 
@@ -58,6 +67,9 @@
 				"settings": {
 					"bundleName": "IntQ.IQuestion.i18n.i18n"
 				}
+			},
+			"": {
+				"dataSource": "northwind"
 			}
 		},
 		"resources": {
