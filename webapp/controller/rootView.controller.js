@@ -26,22 +26,11 @@ sap.ui.define([
 				}
 				
 			});
+		},
+		onPress:function(oEvent){
+			var oBtn = oEvent.getSource();
+			oBtn.setText("Now Add Name from Controller !");
 		}
 	});
 });
 
-/*
-	var oList = this.getView().byId("table1");
-			var oJsonModel = new sap.ui.model.json.JSONModel();
-			// oList.setModel(oModel);
-
-			var oModel = this.getView().getModel("ES5Model");
-			oModel.read("/Suppliers", {
-				"method": "GET",
-				"success": function (data) {
-					console.log(data);
-					oJsonModel.setData(data);
-					oList.setModel(oJsonModel, "JSONMODEL");
-				}
-			});
-*/

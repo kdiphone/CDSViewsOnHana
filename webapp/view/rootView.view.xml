@@ -4,6 +4,7 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
+						<Button id="idPress" text="Press Button !" press="onPress"/>
 					    <ObjectHeader xmlns="sap.m"  title="{CompanyName}" number="100.00" numberUnit="$" id="header0" binding="{JSONMODEL>/results}">
 					        <statuses>
 					            <ObjectStatus text="Success" state="Success" id="status0"/>
