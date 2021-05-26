@@ -25,3 +25,19 @@ sap.ui.define([
 	});
 
 });
+
+/*
+	return this.waitFor({
+						id: "idPress",
+						viewName: sViewName,
+						matchers:new sap.ui.test.matchers.PropertyStrictEquals({
+							name: "text",
+							value:"Now Add Name from Controller !"
+						}),
+						success: function () {
+							Opa5.assert.ok(true, "The rootView view is displayed");
+						},
+						errorMessage: "Did not find the rootView view"
+					});
+				}
+*/

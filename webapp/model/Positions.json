@@ -1,0 +1,4 @@
+{ "Positions": [ 
+     { "id": 123456, "article": "Abcde", "amount": 12 }, 
+     { "id": 654321, "article": "Edcba", "amount": 21 } 
+] }
